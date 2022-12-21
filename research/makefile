@@ -1,8 +1,8 @@
 research:
-	pdflatex research
+	xelatex research
 	biber research
-	pdflatex research
-	pdflatex research
+	xelatex research
+	xelatex research
 	make clean
 	mv research.pdf ../research.pdf
 
