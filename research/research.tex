@@ -1,15 +1,25 @@
 \include{preamble.inc.tex}
 
 \begin{document}
-
-    % \include{title.tex}
+    \include{title.tex}
     \pagenumbering{gobble}
 
     \normalsize
 
     \pagenumbering{arabic}
     \setcounter{page}{2}
+    \specsection{РЕФЕРАТ}
 
+    Расчетно-пояснительная записка содержит 33 с., 2 табл., 16 источников, 1~прил.
+
+    МОДИФИКАЦИЯ LINUX, ЯДРО LINUX, КЛАССИФИКАЦИЯ МЕТОДОВ МОДИФИКАЦИИ LINUX, КОМПИЛЯЦИЯ ЯДРА, ЗАГРУЖАЕМЫЙ МОДУЛЬ, LIVEPATCHING, EBPF
+
+    Объект исследования~--- ядро Linux.
+
+    Цель работы~--- Классификация методов модификации ядра Linux, выбор методов, которые наилучшим способом решают необходимые задачи.
+
+    Поставленная цель достигается путем рассмотрения и классификации известных методов модификации ядра Linux по набору способов взаимодействия с ядром и пользователем.
+    \pagebreak
     % \includepdf[pages={1}]{title.pdf}
     \renewcommand{\contentsname}{\normalsize\bfseries\centering СОДЕРЖАНИЕ}
     \tableofcontents
@@ -22,9 +32,7 @@
 
     \include{03-introduction}
     \include{04-analysis}
-    %\include{05-design}
     \include{06-implementation}
-    %\include{07-research}
     \include{08-conclusion}
 
     \include{07-bibliography}
@@ -33,15 +41,3 @@
 
 
 \end{document}
-
-%
-%\bibliography{biblio}
-%
-%\begin{document}
-
-%    \includepdf[pages={1}]{title.pdf}
-%
-%\maketableofcontents
-%
-%
-%\end{document}

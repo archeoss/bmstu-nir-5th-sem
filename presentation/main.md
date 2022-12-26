@@ -1,7 +1,7 @@
 ---
 marp: true
-theme: uncover
-class: invert
+# theme: 
+# class: 
 style: |
     * {
         font-family: Times New Roman;
@@ -15,7 +15,6 @@ style: |
         margin-top: 0px;
         border-bottom: 1px solid #999;
         font-size: 66px;
-        opacity: 0.9; 
     }
     .head {
         font-size: 26px
@@ -49,6 +48,7 @@ style: |
 <style scoped>
     .left {
         margin-top: 0px;
+        font-size: 40px
     }
     li {
         font-size: 34px;
@@ -67,68 +67,7 @@ style: |
 * Классифицировать существующие методы модификации ядра.
 </div>
 
----
-
-# <header>Термины предметной области
-</header>
-
-<div class="left">
-Ядро Linux — это основной компонент ОС Linux.
-</div>
-
-<div class="left">Ядро должно в первую очередь выполнять две основные задачи:
-</div>
-
-* Взаимодействие с аппаратными компонентами, обслуживая все низкоуровневые элементы, входящие в состав аппаратной платформы.
-* Обеспечить среду выполнения для программ, которые будут выполняться в операционной системе.
-
----
-<style scoped>
-    header {
-        margin-top: 0px;
-        font-size: 44px;
-    }
-    .left {
-        font-size: 32px;
-    }
-</style>
-    
-
-# <header>Термины предметной области
-</header>
-
-![bg left fit](../research/inc/img/virt_mem2.png)
-
-
-<div class="left">
-Виртуальная память - это способ организации памяти, при котором процессору предоставляется не физические адреса, а виртуальные адреса, которые
-в дальнейшем переводятся в физические адреса с помощью таблиц страниц.
-</div>
-
----
-
-<style scoped>
-    header {
-        margin-top: 0px;
-        font-size: 44px;
-    }
-    .left {
-        font-size: 32px;
-    }
-</style>
-    
-
-# <header>Термины предметной области
-</header>
-
-![bg fit right](../research/inc/img/rings.png)
-
-
-<div class="left">
-Идея колец защиты заключается в том, что каждое кольцо имеет собственный набор инструкций, которые процесс на данном кольце защиты может выполнять, и чем ближе кольцо к нулевому, тем больше прав имеет процесс.
-</div>
-
----
+--- 
 
 <style scoped>
     .left {
@@ -239,7 +178,7 @@ style: |
         font-size: 60px;
     }
     .marg {
-        margin-top: 80px;
+        /* margin-top: 80px; */
         font-size: 60px;
     }
     .left {
@@ -278,7 +217,7 @@ style: |
         font-size: 60px;
     }
     .marg {
-        margin-top: 80px;
+        margin-top: 0px;
         font-size: 60px;
     }
     .left {
@@ -314,7 +253,7 @@ style: |
 ---
 <style scoped>
     * {
-        font-size: 25px;
+        font-size: 22px;
     }
     header {
         margin-top: 0px;
@@ -348,7 +287,7 @@ style: |
 ---
 <style scoped>
     * {
-        font-size: 25px;
+        font-size: 22px;
     }
     header {
         margin-top: 0px;
@@ -379,7 +318,6 @@ style: |
 Простота отладки        | :x:  | :white_check_mark:/:x: | :x: | :white_check_mark:
 Поддержка               | :white_check_mark:  | :white_check_mark: | :white_check_mark: | :x:
 Простота развёртывания  | :x:  | :white_check_mark: | :white_check_mark: | :white_check_mark:
-
 
 ---
 <style scoped>
